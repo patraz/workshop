@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+        body{
+        background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+        background: linear-gradient(to right, #25c481, #25b7c4);
+        font-family: 'Roboto', sans-serif;
+        }
+        section{
+        margin: 50px;
+        }
+
+        body {
+            background: -webkit-linear-gradient(
+        135deg, #030d16 0%, #000890 100%);
+            background: -moz-linear-gradient(135deg, #030d16 0%, #000890 100%);
+            background: -o-linear-gradient(135deg, #030d16 0%, #000890 100%);
+            background: linear-gradient(
+        135deg, #030d16 0%, #000890 100%);
+            background-size: cover;
+            font-family: Raleway;
+            color: white;
+            letter-spacing: 1px;
+        }
+        h1{
+        font-size: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 15px;
+        }
+        table{
+        width:100%;
+        table-layout: fixed;
+        }
+        .tbl-header{
+        background-color: rgba(255,255,255,0.3);
+        }
+        .tbl-content{
+        height:300px;
+        overflow-x:auto;
+        margin-top: 0px;
+        border: 1px solid rgba(255,255,255,0.3);
+        }
+        th{
+        padding: 20px 15px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        }
+        td{
+        font-family: roboto;
+        padding: 15px;
+        text-align: left;
+        vertical-align:middle;
+        font-weight: 300;
+        font-size: 12px;
+        color: #fff;
+        border-bottom: solid 1px rgba(255,255,255,0.1);
+        }
+        nav {
+            display: block;
+        }
+        #nav-links ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #nav-links li {
+            list-style: none;
+            transition: 0.3s;
+        }
+        #navbar {
+        align-items: stretch;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        z-index: 99;
+        box-shadow: 0px 4px 4px grey;
+        }
+        #nav-links li a {
+        text-decoration: none;
+        font-size: x-large;
+        color: white;
+        padding: 0.75rem;
+        display: inline-block;
+        cursor: pointer;
+        } -->
+    </style>
+    <div id="navbar">
+        <h1 id="navbar-logo"><span>BIKE</span> MAJSTER  <img height="35px" src="rower.svg"></h1>
+        <nav id="nav-links">
+            <ul>
+                <li>
+                    <a id="navczesci">
+                        CZĘŚCI
+                    </a>
+                </li>
+                <li>
+                    <a id="navrowery">
+                        ROWERY
+                    </a>
+                </li>
+                <li class="navdodaj">
+                    <a id="dodaj">
+                        DODAJ DO LISTY
+                    </a>
+                </li>
+                <li class="navwyl">
+                    <a href="/logout" id="navwyl">
+                        WYLOGUJ
+                    </a>
+                </li>
+                <li class="">
+                    <a id="home">
+                        <img src="home.svg" height="25px">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
