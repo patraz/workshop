@@ -1,59 +1,20 @@
 
 {% extends "base.html" %}
 {% block content %}
-    <!-- <table>
-        <div class="tbl-header">
-            <table cellpadding="0" cellspacing="0" border="0">
-                <thead>
-                    <tr>
-                        <th>Nazwa</th>
-                        <th>Ilość</th>
-                        <th>Opis</th>
-                        <th>Dostawca</th>
-                        <th></th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-        {% for x in parts_q %}
-        <tr>
-            <td>{{x.nazwa}}</td>
-            <td>{{x.ilość}}</td>
-            <td>{{x.opis}}</td>
-            <td>{{x.kupione_od}}</td>
-            <td>
-                <a href="/parts/{{ x.id }}"><button>Edytuj</button></a>
-            </td>
-        </tr>
-        {% endfor %}
-    </table>
-<p>{{ parts_q }}</p>
-<ul>
-    {% for x in parts_q %}
-        <li>{{ x.nazwa }}</li>
-    {% endfor %}
-</ul> -->
 
 
-
+<div class="tbl">
 <section>
-    <!--for demo wrap-->
-    <h1>TABELA CZĘŚCI</h1>
-    <div class="tbl-header">
+    <h1>Spis części i rowerów</h1>
+    <div class="tablica">
       <table cellpadding="0" cellspacing="0" border="0">
-        <thead>
+        <tbody>
           <tr>
             <th>Nazwa</th>
             <th>Ilość</th>
             <th>Opis</th>
             <th>Dostawca</th>
           </tr>
-        </thead>
-      </table>
-    </div>
-    <div class="tbl-content">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tbody>
             {% for x in parts_q %}
             <tr>
                 <td>{{x.nazwa}}</td>
@@ -69,5 +30,5 @@
       </table>
     </div>
   </section>
-  
+</div>
 {% endblock content %}

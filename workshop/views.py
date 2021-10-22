@@ -8,16 +8,17 @@ import random
 from parts.models import Part
 
 
-def home_view(request, *args, **kwargs):
+
+def home_view(request, *args, **kwargs,):
     """
     Take in a request(Django sends request)
     Return HTML as a response (We pick to return the response)
     """
     # from the database??
-    part_obj = Part.objects.get(id = 4)
+    part_obj = Part.objects.get(id=1)
     parts_q = Part.objects.all()
   
-
+    print(args, kwargs, id)
     context = {
         "parts_q" : parts_q,
         "title" : part_obj.nazwa,
