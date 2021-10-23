@@ -16,11 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import home_view
-from parts import views
+from parts.views import (
+    part_edit_view,
+    part_add_view,
+)
+from accounts import views
 
 
 urlpatterns = [
     path('', home_view),
-    path('parts/<int:id>/', views.part_edit_view),
+    path('parts/<int:id>/', part_edit_view),
+    path('parts/add/', part_add_view),
     path('admin/', admin.site.urls),
+    path('login/', views.login_view),
+    path('register/', views.register_view),
+    path('logout/', views.logout_view),
 ]

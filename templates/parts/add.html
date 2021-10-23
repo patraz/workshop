@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div style="color:darkblue" class="container">  
+    <form id="contact" action="" method="post">
+        <a class="back-button" href="/">
+            &lt;&nbsp;POWRÓT
+          </a>
+      <h3>Co chcesz dodać? </h3>
+      <h4 >Co chcesz zmienić?</h4>
+      {% csrf_token %}
+      {{ form }}
+            <fieldset>
+        <a href="/"><button style='margin-top: 10px'name="submit" type="submit" id="contact-submit" data-submit="...Sending">Dodaj</button></a>
+      </fieldset>
+    </form>
+  </div>
+{% endblock content %}
